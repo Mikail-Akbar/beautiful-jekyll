@@ -6,15 +6,15 @@
 # --- Required options --- #
 
 # Name of website
-title: My Website
+title: Mikail Akbar's Art of Data Blog
 
 # Your name to show in the footer
-author: Some Person
+author: Mikail Akbar
 
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "I am an 11th grader in the Horace Mann School."
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
