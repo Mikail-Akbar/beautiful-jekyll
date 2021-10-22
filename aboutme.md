@@ -1,3 +1,5 @@
-## Mikail Akbar
+What's up! My name is Mikail Akbar, and I am currently a junior at the Horace Mann School. Besides coding, some of my favorite hobbies are learning languages and watching soccer. 
 
-What's up! This is the space where I publish all of my labs for Art of Data. Hope y'all enjoy!
+I am still learning how to code, but sooner or later I will be ruling the streets of New York with my menacing code!
+
+![mikailimage][/assets/img/IMG_5881.jpeg]
