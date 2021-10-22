@@ -13,7 +13,7 @@ I would say that the biggest source of errors in my code had to be when I forgot
 
 Thank you for reading my blog! And stay updated for more labs!
 
-![image](/assets/img/IMG_0969.jpg)
+![mikail](/assets/img/IMG_0969.jpg)
 
 >**Mikail Akbar**
 >
