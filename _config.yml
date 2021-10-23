@@ -15,10 +15,10 @@ author: Mikail Akbar
 
 navbar-links:
   About Me: "aboutme"
+  Horace Mann: "https://www.horacemann.org"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Horace Mann: "https://www.horacemann.org"
     
 
 # --- Logo --- #
