@@ -68,21 +68,23 @@ digiAttack("datasets/DigiDB_digimonlist.csv")
 
 ```
 
-### The three functions
+### The three functions:
 
-##### What is the average speed of all Digimon?
+
+
+##### 1. What is the average speed of all Digimon?
 
 In my first function, I created a dictionary in which I add the speeds of all digimon in a list under a key called "average speed". After collecting all of the Digimon's speeds, I found the average of all of the speeds by dividing the sum of all speeds by the "len" of my list, or the number of elements in my list. 
 
 By running my function, I found that the average Digimon speed is 120.40160642570281.
 
-##### Write a function that can count the number of Digimon with a specific attribute.
+##### 2. Write a function that can count the number of Digimon with a specific attribute.
 
 For this question, I created a function that inputs two additional values: the "category" of the Digimon's value, and the "value" of that category. Then, I created a counter that kept track of the number of Digimons for my code. Then comes the most important part of my code: for every Digimon in the dataset that shares the same inputted value in the inputted category, I add one to my counter. 
 
 When I call my code, I test how many Digimons' "Stage" is "Baby", which returns 5. 
 
-##### If your team only has 15 Memory, name a team of up to 3 Digimon that has at least 300 attack (Atk) in total.
+##### 3. If your team only has 15 Memory, name a team of up to 3 Digimon that has at least 300 attack (Atk) in total.
 
 In this function, I locate how many Digimons have a memory less than or equal to 5, and an attack greater than or equal to 100. After placing all of these Digimons in a list, I print the first three values of the list to give me a list of Digimons whose memory is less than or equal to 15 and whose memory's are greater than or equal to 300.
 
