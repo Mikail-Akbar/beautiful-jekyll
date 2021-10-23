@@ -84,7 +84,7 @@ When I call my code, I test how many Digimons' "Stage" is "Baby", which returns 
 
 ##### If your team only has 15 Memory, name a team of up to 3 Digimon that has at least 300 attack (Atk) in total.
 
-In this function, I locate how many Digimons have a memory less than or equal to 5, and an attack greater than or equal to 100. After placing all of these Digimons in a list, I print the first three values of the list to give me a list of Digimons whose memory is less than or equal to 15 and whose memory's are greater than or equal to 100.
+In this function, I locate how many Digimons have a memory less than or equal to 5, and an attack greater than or equal to 100. After placing all of these Digimons in a list, I print the first three values of the list to give me a list of Digimons whose memory is less than or equal to 15 and whose memory's are greater than or equal to 300.
 
 When I call my code, the team of Digimons I get are 'Koromon', 'Tsunomon', and 'Tsumemon'. 
 
