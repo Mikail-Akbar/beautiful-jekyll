@@ -18,6 +18,8 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
+    Horace Mann: "https://www.horacemann.org"
+    
 
 # --- Logo --- #
 
@@ -73,7 +75,6 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "www.horacemann.org"
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -98,7 +99,7 @@ navbar-col: "#ADD8E6"
 navbar-text-col: "#00008B"
 navbar-border-col: "#DDDDDD"
 page-col: "#FFFFFF"
-text-col: "#B59633"
+text-col: "#000000"
 link-col: "#008AFF"
 hover-col: "#0085A1"
 footer-col: "#FFD580"
