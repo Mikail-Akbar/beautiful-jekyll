@@ -8,7 +8,7 @@ import csv
 
 '''
 function that takes the Digimon CSV file,
-appends all of the Lv50 Digimon speeds to list "avgSpdList",
+appends all of the Digimon speeds to list "avgSpdList",
 and returns the average speed of all Digimon
 '''
 def avgSpeedDigimon(filePath): 
@@ -23,15 +23,15 @@ print(avgSpeedDigimon("datasets/DigiDB_digimonlist.csv"))
 
 '''
 function that takes the digimon CSV file, 
-one of the Digimon's category, and the value of that category. 
-Returns how many Digimon's have the inputted category and value
+one of the Digimon's categories, and the attribute of that category. 
+Returns how many Digimons have the inputted attribute from the category
 '''
-def countCategory(filePath, category, value): 
+def countCategory(filePath, category, attribute): 
     with open(filePath, "r") as f:
         num = 0 
         data = csv.DictReader(f)
         for row in data: 
-            if row[category] == value: 
+            if row[category] == attribute: 
                 num += 1 
     return num 
 print(countCategory("datasets/DigiDB_digimonlist.csv", "Stage", "Baby")) 
@@ -39,7 +39,7 @@ print(countCategory("datasets/DigiDB_digimonlist.csv", "Stage", "Baby"))
 '''
 A function that takes the Digimon CSV file,
 appends all Digimons with a memory of <= 5 and attack of >= 100  in list "Digilist",
-and returns the first 3 Digimons in the CSV (total <= 15 memory, >= 300 attack)
+and returns the first 3 Digimons from the CSV (total <= 15 memory, >= 300 attack)
 '''
 def digiAttack(filePath): 
     digiList = [] 
@@ -59,15 +59,15 @@ print(digiAttack("datasets/DigiDB_digimonlist.csv"))
 
 ##### 1. What is the average speed of all Digimon?
 
-In my first function, I created a dictionary in which I add the speeds of all digimon in a list under a key called "average speed". After collecting all of the Digimon's speeds, I found the average of all of the speeds by dividing the sum of all speeds by the "len" of my list, or the number of elements in my list. 
+In my first function, I created a list in which I add the speeds of all Digimon. After collecting all of the Digimon's speeds, I found the average of all of the speeds by dividing the sum of all speeds by the "len" of my list, or the number of elements in my list. 
 
 By running my function, I found that the average Digimon speed is 120.40160642570281.
 
 ##### 2. Write a function that can count the number of Digimon with a specific attribute.
 
-For this question, I created a function that inputs two additional values: the "category" of the Digimon's value, and the "value" of that category. Then, I created a counter that kept track of the number of Digimons for my code. Then comes the most important part of my code: for every Digimon in the dataset that shares the same inputted value in the inputted category, I add one to my counter. 
+For this question, I created a function that inputs two additional values: the "category" of the Digimon's value, and the "attribute" of that category. Then, I created a counter that kept track of the number of Digimons for my code. Then comes the most important part of my code: for every Digimon in the dataset that shares the same inputted attribute in the inputted category, I add one to my counter. 
 
-When I call my code, I test how many Digimons' "Stage" is "Baby", which returns 5. 
+When I call my code, I test how many Digimons' "Stage" is "Baby", which correctly returns 5. 
 
 ##### 3. If your team only has 15 Memory, name a team of up to 3 Digimon that has at least 300 attack (Atk) in total.
 
