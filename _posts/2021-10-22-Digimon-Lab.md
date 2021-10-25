@@ -91,4 +91,4 @@ Thank you for reading my blog! And stay updated for more labs!
 
 >**Mikail Akbar**
 >
->A crazy good coder and data analyst
+>An extraordinary coder and data analyst
