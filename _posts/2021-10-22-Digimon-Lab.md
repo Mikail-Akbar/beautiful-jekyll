@@ -89,7 +89,7 @@ I would say that the biggest source of errors in my code had to be when I forgot
 
 Thank you for reading my blog! And stay updated for more labs!
 
-![mikail](/assets/img/IMG_0975.jpeg)
+![image](/assets/img/IMG_0975.jpeg)
 
 >**Mikail Akbar**
 >
