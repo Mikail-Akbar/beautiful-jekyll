@@ -1,4 +1,4 @@
-![](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/phackmeme.jpeg)
+![](phackmeme.jpeg)
 
 ##### Welcome to my research meta analysis! The objective is this assignment is to critically analyze a study of your choice. Since many researchers may be unconciously manipulating the results of their data, it is our job to analyze the merits of any given study and not to take the study at face value.
 
