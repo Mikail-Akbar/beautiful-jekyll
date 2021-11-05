@@ -1,6 +1,6 @@
-![](phackmeme.jpeg)
-
 ##### Welcome to my research meta analysis! The objective is this assignment is to critically analyze a study of your choice. Since many researchers may be unconciously manipulating the results of their data, it is our job to analyze the merits of any given study and not to take the study at face value.
+
+![](phackmeme.jpeg)
 
 The study that I analyzed is called “Chronic Lack of Sleep is Associated With Increased Sports Injuries in Adolescent Athletes,” published in the Journal of Pediatric Orthopaedics. The authors of this study are Dr. Matthew D. Wilenski,  Dr. David L. Skaggs, Gregory A. Bishop, Dr. J Lee Pace, Dr. David A. Ibrahim, Dr. Tishya A.L. Wren, and Audrius Barzdukas. Furthermore, the institutions that the authors are affiliated with are Elite Sports Medicine, Connecticut Children’s Medical Center, Children’s Orthopaedic Center in the Children’s Hospital Los Angeles, the Harvard-Westlake School, and The Institute for Scholastic Sport Science and Medicine. Overall, the study was funded by the Pediatric Orthopaedic Society of North America (POSNA). In this study, the authors have correlated various training practices, nominal data, and sleep schedules with the risk of injury in student athletes. While the null hypothesis of the study is that there is no relationship between sleep deprivation and injury rates in young athletes, the alternative hypothesis is that there is a relationship between sleep deprivation and injury rates in young athletes. 
   
