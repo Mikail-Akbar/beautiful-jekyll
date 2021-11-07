@@ -10,7 +10,7 @@ Using the Stata program, the researchers were able to determine the relative ris
     
 I believe that publish or perish did not have an effect on this study. First, many members of the team of researchers in the study have already published a number of studies, preventing the group from being pressured to publish this study. Furthermore, many of the researchers are experienced medical doctors, so their hypothetical lack of publishing likely has no effect on their desire to publish. Lastly, the results of the study are not particularly surprising, given that there have already been numerous studies that concluded that a lack of sleep lowers cognitive functions in adolescents. Thus, I believe that there has been no such institutional pressure to publish a finding that is not particularly fascinating in order for the researchers’ academic careers to succeed. 
 
-##### Link to the study:
+###### Link to the study:
 https://journals.lww.com/pedorthopaedics/fulltext/2014/03000/chronic_lack_of_sleep_is_associated_with_increased.1.aspx
 
 Thank you for reading my analysis! Check out my previous blog posts, and stay updated for more cool things on my website!
