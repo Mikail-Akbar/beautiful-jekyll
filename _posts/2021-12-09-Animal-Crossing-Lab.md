@@ -106,7 +106,7 @@ print(findColors("datasets/animalsocks.csv"))
 ### The questions:
 
 #### Discuss how you used the API to obtain the dataset.
-In order to obtain the dataset, we first had to create a variable for the BASE_URL, the API_KEY, and the ENDPOINT. Then, we created our payload: although the key is just our API key, we also have an index. In order to obtain the dataset, we have to iterate through the index to get each row of the data. So, I made the idx equal to variable n. But before that, I set n equal to 0, and in my code I am iterating through n by adding 1 to n at the end of the while loop. Once there is no more response, I break the while loop to stop the while loop from infinitely iterating. 
+In order to obtain the dataset, we first had to create a variable for the BASE_URL, the API_KEY, and the ENDPOINT. Then, we created our payload: although the key is just our API key, we also have an index. In order to obtain the dataset, we have to iterate through the index to get each row of the data. So, I made the idx equal to variable n. But before that, I set n equal to 0, and in my code I am iterating through n by adding 1 to n at the end of the while loop. Once the response is not ok anymore, I break the while loop to stop the while loop from infinitely iterating. 
 
 Now, I am iterating through each row of the entire dataset. However, the response.text returns each row of the dataset as one string. So, I had to create another function that splits the string into a list that has the values between the commas as the values of the list. 
 
@@ -123,11 +123,11 @@ Now that I got all of that sorted out, I only want to save the name, color 1, an
 
 This was an enjoyable lab. I had fun trying to solve the main issue in this lab, which was iterating through the index. 
 
-I worked on this lab by myself. Although most of the methods were self explanatory, I struggled with trying to iterate through the index. But before that, I didn't know what an index even meant! So, it took a while for me to conceptually understand what an index was and how to manipulate the index. Once I figured that out, I understood pretty easily that I needed a while loop to iterate through each index. However, the main issue was knowing where to put the payload and response variables, since in our previous examples they were outside of the while loop. But after that, I was able to print my data nicely, and most of my lab was complete.
+I worked on this lab by myself. Although most of the methods were self explanatory, I struggled with trying to iterate through the index. But before that, I didn't know what an index even meant! So, it took a while for me to conceptually understand what an index was and how to manipulate the index. Once I figured that out, I understood pretty easily that I needed a while loop to iterate through each index. However, the main issue was knowing where to put the payload and response variables, since in our previous examples they were outside of the  loop. But after that, I was able to print my data nicely, and most of my lab was complete.
 
 There were 2 other small issues that took me a while to get around before successfully running the code. First, the response.text we generate is only one string, so it took me a while to understand that I needed to break up this string in order to index through the rows. 
 
-Second, I was taken by utter shock when the keys of the dictionary of my findNumVariations function had some nasty /ufeff encoding on it. It took some time for me to understand what that meant, and my best friend: https://stackoverflow.com/questions/17912307/u-ufeff-in-python-string helped me know why it is there. So, I knew to include encoding='utf-8-sig' as one of my parameters while opening the CSV.
+Second, I was taken by utter shock when the keys of the dictionary of my findNumVariations function had some nasty /ufeff encoding on it. It took some time for me to understand what that meant, and my best friend [Stack Overflow](https://stackoverflow.com/questions/17912307/u-ufeff-in-python-string) helped me know why it is there. So, I knew to include encoding='utf-8-sig' as one of my parameters while opening the CSV.
 
 ##### Thanks for reading my lab! And stay tuned for more updates!
 #### Mikail Akbar
