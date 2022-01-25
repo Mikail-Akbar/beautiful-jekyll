@@ -17,51 +17,51 @@ The dataset I worked with entails the statistics regarding the football teams in
 - The data for the goals scored is somewhat dispersed, compared to the data for the other 3 columns. The range is a whopping 79 goals, and the standard deviation is 16.45 goals. I visualized this data in a violin plot below.
 - The data in all 4 columns are not skewed in any direction, as the means and medians are very close to each other. 
 
-![violinplot]
+![violinplot](/assets/img/violin.png)
 
 ## What I found:
 
 #### 1. There is a direct relationship between possession and goals scored. 
 
-![possgoals]
+![possgoals](/assets/img/possgoals.png)
 
-Regression line: 0.718
+###### Regression line: 0.718
 
 We can conclude that teams that have more possession score more goals, which is supported by our regression line of 0.718, a number that is close to 1. Based on this graph, I wonder why coaches deploy the counter-attack tactic, where the defense sits deep on the pitch and allows the other side to have possession so that when they win back possession, they can speed down the pitch to get an open, goal-scoring opportunity. 
 
 #### 2. Serie A teams score the most goals, while La Liga teams score the least amount of goals. 
 
-![goalbargraph]
+![goalbargraph](/assets/img/goalsbar.png)
 
 We can conclude that Serie A teams have the most attacking tactics (leading to the most goals), while La Liga teams have the most defensive tactics. In the future, I can further analyze the attacking vs. defensive tactics of a team by looking at the average field position of the 10 outfield players, as well as the formation each manager employs (3-4-3, 4-3-3, 4-4-2, etc.)
 
 ##### 3. La Liga teams win the most aerial duels, while Serie A teams win the least aerial duels.
 
-![aerialswonbar]
+![aerialswonbar](/assets/img/aerialsbar.png)
 
 Since La Liga teams score the least goals, this can mean that they use more defensive tactics and hence win more aerial duels (a defensive statistic.) On the other hand, while Serie A scores the most goals, that can mean that they deploy more attacking attacks and thus win the least aerial duels.
 
 ##### 4. The information above is further corroborated by a scatter plot between goals and aerials won:
 
-![aerialgoalsscatter]
+![aerialgoalsscatter](/assets/img/aerialsgoals.png)
 
-Regression line: -0.496
+###### Regression line: -0.496
 
 Although the regression line is not entirely convincing, we can somewhat conclude that the more goals a team scores, the less aerial duels they win. This is a reasonable conclusion considering that teams either favor attacking or defensive tactics (a famous example is Chelsea FC’s “Park the Bus” tactic), so teams sacrifice defensive prowess to focus on scoring more goals. 
 
 ##### 5. There is an inverse relationship between aerial duels won and possession.
 
-![aerialsposs]
+![aerialsposs](/assets/img/aerialsposs.png)
 
-Regression line: -0.544
+###### Regression line: -0.544
 
 This is a surprising relationship, since winning more aerial duels means to win possession. So, it’s interesting to find that teams that win less aerial duels have a bigger hold on possession. Although the regression line here is also not entirely convincing, there is still some correlation between the two variables.
 
 ##### 6. There is a direct relationship between a team’s shots per game and passing accuracy.
 
-![shotspass]
+![shotspass](/assets/img/shotspass.png)
 
-Regression line: 0.684
+###### Regression line: 0.684
 
 We can conclude that the more shots a team takes per game, the higher their passing accuracy. This is supported by a regression line of 0.684. It’s possible that this relationship exists due to the technical quality of the team; if a team can find a way to create more shots per game, their passing accuracy would also reflect the technical excellence on the pitch. 
 
