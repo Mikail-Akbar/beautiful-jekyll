@@ -85,5 +85,13 @@ This is a surprising relationship, since winning more aerial duels means to win 
 
 We can conclude that the more shots a team takes per game, the higher their passing accuracy. This is supported by a value of correlation of 0.684. It’s possible that this relationship exists due to the technical quality of the team; if a team can find a way to create more shots per game, their passing accuracy would also reflect the technical excellence on the pitch. 
 
+#### 8. There is no correlation between yellow cards and goals scored. 
+
+![yellowcards](/assets/img/yellowcards.png)
+
+##### Value of correlation: -0.189
+
+I wanted to look at this statistic because I wanted to see whether teams that have more yellow cards (which means that they are more agressive on the pitch) correlates to more goals scored. However, according to the scatter plot, there is not correlation between the two variables. This conclusion is further corroborated by a value of correlation of -0.189, which is close to 0, or no correlation at all. 
+
 ## Limitations
 I wish this dataset included information about the teams’ record. This way I can analyze whether these various statistics (shots per game, possession, aerial duels, etc) has an effect on the success of the team. While it is interesting to correlate these statistics to the goals scored per game, scoring goals does not mean that a team is successful. Furthermore, all of the data that is presented in the dataset is from teams that play in one league. In other words, data from interleague play is not represented in this dataset. That can affect our data because teams may score a certain number of goals against teams in their own league, but that number can increase or decrease against teams from other leagues. 
