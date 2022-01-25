@@ -14,14 +14,34 @@ The dataset I worked with entails the statistics regarding the football teams in
 | Max | 99.00 | 17.10 | 89.70 | 26.80 |
 
 ### Some notes about the center and variability of the selected 4 categories
-- The data for the goals scored is somewhat dispersed, compared to the data for the other 3 columns. The range is a whopping 79 goals, and the standard deviation is 16.45 goals. I visualized this data in a violin plot below.
+- The data for the goals scored is somewhat dispersed, compared to the data for the other 3 columns. The range is a whopping 79 goals, and the standard deviation is 16.45 goals. I visualized this data in a box plot below.
 - The data in all 4 columns are not skewed in any direction, as the means and medians are very close to each other. 
 
-![violinplot](/assets/img/violin.png)
+![boxplot](/assets/img/boxplot.png)
 
 ## What I found:
 
-#### 1. There is a direct relationship between possession and goals scored. 
+#### 1. In terms of goals scored, some leagues are more lop-sided than others.
+
+The IQR gives a good idea about where the middle 50% of the data lies. In terms of the goals scored across all 5 leagues, some leagues have teams that score very few goals and other teams that score many goals; this creates a lop-sided league. I calculated how many teams in each league scored an amount of goals that was lower than the 25% mark:
+
+- Bundesliga: 6 (Mainz, Augsburg, Arminia Bielefeld, Werder Bremen, FC Koln, Schalke 04)
+- La Liga: 0
+- Serie A: 2 (Parma, Benevento)
+- Ligue 1: 3 (Angers, Nimes, Dijon)
+- Premier League: 6 (Wolves, Brighton, Burnley, Fulham, West Brom, Sheffield United)
+
+I also calculated how many teams scored an amount of goals that are higher than the 75% mark:
+
+- Bundesliga: 4 (Bayern Munich, Borrusia Dortmund, Eintracht Frankfurt, Borrusia Monchengladbach)
+- La Liga: 0
+- Serie A: 7 (Juventus, Roma, AC Milan, Inter Milan, Atalanta, Napoli, Sassuolo)
+- Ligue 1: 4 (PSG, Monaco, Lyon, Lille) 
+- Premier League: 7 (Man City, Man United, Tottenham, Leeds, West Ham, Leicester, Liverpool)
+
+This means that, in terms of goals scored, some leagues are more balanced than others. The most balanced league in that regard is clearly La Liga, as all 20 teams fall in the IQR. On the other hand, the Premier League is the most lop-sided league, with 13 out of 20 teams falling outside the IQR of the goals scored within Europe's top 5 leagues.
+
+#### 2. There is a direct relationship between possession and goals scored. 
 
 ![possgoals](/assets/img/possgoals.png)
 
@@ -29,19 +49,19 @@ The dataset I worked with entails the statistics regarding the football teams in
 
 We can conclude that teams that have more possession score more goals, which is supported by our value of correlation of 0.718, a number that is close to 1. Based on this graph, I wonder why coaches deploy the counter-attack tactic, where the defense sits deep on the pitch and allows the other side to have possession so that when they win back possession, they can speed down the pitch to get an open, goal-scoring opportunity. 
 
-#### 2. Serie A teams score the most goals, while La Liga teams score the least amount of goals. 
+#### 3. Serie A teams score the most goals, while La Liga teams score the least amount of goals. 
 
 ![goalbargraph](/assets/img/goalsbar.png)
 
 We can conclude that Serie A teams have the most attacking tactics (leading to the most goals), while La Liga teams have the most defensive tactics. In the future, I can  analyze the attacking vs. defensive tactics of a team by looking at the average field position of the 10 outfield players, as well as the formation each manager employs (3-4-3, 4-3-3, 4-4-2, etc.)
 
-#### 3. La Liga teams win the most aerial duels, while Serie A teams win the least aerial duels.
+#### 4. La Liga teams win the most aerial duels, while Serie A teams win the least aerial duels.
 
 ![aerialswonbar](/assets/img/aerialsbar.png)
 
 Since La Liga teams score the least goals, this can mean that they use more defensive tactics and hence win more aerial duels (a defensive statistic.) On the other hand, while Serie A scores the most goals, that can mean that they deploy more attacking attacks and thus win the least aerial duels.
 
-#### 4. The information above is further corroborated by a scatter plot between goals and aerials won:
+#### 5. The information above is further corroborated by a scatter plot between goals and aerials won:
 
 ![aerialgoalsscatter](/assets/img/aerialsgoals.png)
 
@@ -49,7 +69,7 @@ Since La Liga teams score the least goals, this can mean that they use more defe
 
 Although the value of correlation is not entirely convincing, we can somewhat conclude that the more goals a team scores, the less aerial duels they win. This is a reasonable conclusion considering that teams either favor attacking or defensive tactics (a famous example is Chelsea FC’s “Park the Bus” tactic), so teams sacrifice defensive prowess to focus on scoring more goals. 
 
-#### 5. There is an inverse relationship between aerial duels won and possession.
+#### 6. There is an inverse relationship between aerial duels won and possession.
 
 ![aerialsposs](/assets/img/aerialsposs.png)
 
@@ -57,7 +77,7 @@ Although the value of correlation is not entirely convincing, we can somewhat co
 
 This is a surprising relationship, since winning more aerial duels means to win possession. So, it’s interesting to find that teams that win less aerial duels have a bigger hold on possession. Although the value of correlation here is also not entirely convincing, there is still some relationship between the two variables.
 
-#### 6. There is a direct relationship between a team’s shots per game and passing accuracy.
+#### 7. There is a direct relationship between a team’s shots per game and passing accuracy.
 
 ![shotspass](/assets/img/shotspass.png)
 
