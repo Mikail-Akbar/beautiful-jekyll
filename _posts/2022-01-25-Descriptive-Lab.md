@@ -45,7 +45,7 @@ This means that, in terms of goals scored, some leagues are more balanced than o
 
 #### 2. There is a direct relationship between possession and goals scored. 
 
-![possgoals]({{baseurl}}/assets/img/possgoals.png)
+![possgoals]({{site.baseurl}}/assets/img/possgoals.png)
 
 ##### Value of correlation: 0.718
 
