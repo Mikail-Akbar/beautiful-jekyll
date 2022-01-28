@@ -5,15 +5,7 @@ The dataset I worked with entails the statistics regarding the football teams in
 The [dataset](https://www.kaggle.com/varpit94/football-teams-rankings-stats) was created by Arpit Verma on Kaggle.
 
 ### Center and variability in my data (98 teams)
-|       | Goals | Shots per game | Pass accuracy (%) | Aerial duals won |
-| ----------- | ----------- | ----------- | ----------- | ----------- |
-| Mean | 52.18 | 11.85 | 80.44 | 16.00| 
-| Standard Deviation | 16.45 | 2.150 | 4.690 | 3.079 | 
-| Min | 20.00 | 7.100 | 66.50 | 9.500 |
-| 25% | 40.25 | 10.33 | 78.03 | 14.03 |
-| 50% | 50.00 | 11.45 | 80.80 | 16.10 |
-| 75% | 61.75 | 13.35 | 83.45 | 17.85 |
-| Max | 99.00 | 17.10 | 89.70 | 26.80 |
+![table](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/soccer_table.png?raw=true)
 
 ### Some notes about the center and variability of the selected 4 categories
 - The data for the goals scored is somewhat dispersed, compared to the data for the other 3 columns. The range is a whopping 79 goals, and the standard deviation is 16.45 goals. I visualized this data in a box plot below.
