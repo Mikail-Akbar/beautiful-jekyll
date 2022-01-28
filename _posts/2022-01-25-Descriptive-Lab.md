@@ -19,7 +19,7 @@ The [dataset](https://www.kaggle.com/varpit94/football-teams-rankings-stats) was
 - The data for the goals scored is somewhat dispersed, compared to the data for the other 3 columns. The range is a whopping 79 goals, and the standard deviation is 16.45 goals. I visualized this data in a box plot below.
 - The data in all 4 columns are not skewed in any direction, as the means and medians are very close to each other. 
 
-![boxplot](/assets/img/boxplot.png)
+![boxplot](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/boxplot.png?raw=true)
 
 ## What I found:
 
@@ -45,9 +45,7 @@ This means that, in terms of goals scored, some leagues are more balanced than o
 
 #### 2. There is a direct relationship between possession and goals scored. 
 
-![possgoals](/assets/img/possgoals.png)
-
-<img src="{{https://mikail-akbar.github.io}}/assets/img/possgoals.png>
+![possgoals]({{baseurl}}/assets/img/possgoals.png)
 
 ##### Value of correlation: 0.718
 
@@ -55,19 +53,19 @@ We can conclude that teams that have more possession score more goals, which is 
 
 #### 3. Serie A teams score the most goals, while La Liga teams score the least amount of goals. 
 
-![goalbargraph](/assets/img/goalsbar.png)
+![goalbargraph]({{site.baseurl}}/assets/img/goalsbar.png)
 
 We can conclude that Serie A teams have the most attacking tactics (leading to the most goals), while La Liga teams have the most defensive tactics. In the future, I can  analyze the attacking vs. defensive tactics of a team by looking at the average field position of the 10 outfield players, as well as the formation each manager employs (3-4-3, 4-3-3, 4-4-2, etc.)
 
 #### 4. La Liga teams win the most aerial duels, while Serie A teams win the least aerial duels.
 
-![aerialswonbar](/assets/img/aerialsbar.png)
+![aerialswonbar](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/aerialsbar.png?raw=true)
 
 Since La Liga teams score the least goals, this can mean that they use more defensive tactics and hence win more aerial duels (a defensive statistic.) On the other hand, while Serie A scores the most goals, that can mean that they deploy more attacking attacks and thus win the least aerial duels.
 
 #### 5. The information above is further corroborated by a scatter plot between goals and aerials won:
 
-![aerialgoalsscatter](/assets/img/aerialsgoals.png)
+![aerialgoalsscatter](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/aerialsgoals.png?raw=true)
 
 ##### Value of correlation: -0.496
 
@@ -75,7 +73,7 @@ Although the value of correlation is not entirely convincing, we can somewhat co
 
 #### 6. There is an inverse relationship between aerial duels won and possession.
 
-![aerialsposs](/assets/img/aerialsposs.png)
+![aerialsposs](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/aerialsposs.png?raw=true)
 
 ##### Value of correlation: -0.544
 
@@ -83,7 +81,7 @@ This is a surprising relationship, since winning more aerial duels means to win 
 
 #### 7. There is a direct relationship between a team’s shots per game and passing accuracy.
 
-![shotspass](/assets/img/shotspass.png)
+![shotspass](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/shotspass.png?raw=true)
 
 ##### Value of correlation: 0.684
 
@@ -91,7 +89,7 @@ We can conclude that the more shots a team takes per game, the higher their pass
 
 #### 8. There is no correlation between yellow cards and goals scored. 
 
-![yellowcards](/assets/img/yellowcards.png)
+![yellowcards](https://github.com/Mikail-Akbar/mikail/blob/Mikail-Akbar-patch-1/assets/img/yellowcards.png?raw=true)
 
 ##### Value of correlation: -0.189
 
