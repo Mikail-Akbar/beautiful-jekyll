@@ -14,29 +14,29 @@ from vega_datasets import data
 
 happy = pd.read_csv("datasets/2019.csv")
 
-countries = alt.topo_feature(data.world_110m.url, 'countries')
+countries = alt.topo_feature(data.world_110m.url, 'countries') #how I'm getting data for countries
 
 map1 = alt.Chart(countries).mark_geoshape().encode(
   color='Score:Q',
 ).transform_lookup(
     lookup='id',
-    from_=alt.LookupData(happy, 'id', ['Score'])
+    from_=alt.LookupData(happy, 'id', ['Score']) #how to match each country to country code
 ).project(
-    "naturalEarth1"
+    "naturalEarth1" #type of world map I'm using
 ).properties(
     width=1000,
     height=700,
     title="Map of world's happiest countries"
 )
 
-map2 = alt.Chart(countries).mark_geoshape(
+map2 = alt.Chart(countries).mark_geoshape( #2nd gray-colored map for countries not represented in data
     fill='lightgray',
     stroke='white'
 ).project(
     "naturalEarth1"
 ).properties(
-    width=700,
-    height=500
+    width=1000,
+    height=700
 )
 
 map2 + map1
@@ -50,9 +50,9 @@ After creating the map, I used Pandas to find summary statistics for the total s
 ```py
 ## Does money buy happiness?
 
-selection = alt.selection_multi(fields=['Continent'])
+selection = alt.selection_multi(fields=['Continent']) #click for continent
 dom = ['Africa', 'Asia', 'Europe', 'North America', 'Oceania', 'South America']
-rng = ['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', 'gold', '#ff7f00']
+rng = ['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', 'gold', '#ff7f00'] #dif colors than default
 
 continent_color = alt.condition(selection,    # Set the color to change depending on a the selection
       alt.Color("Continent:N", scale=alt.Scale(domain=dom, range=rng),legend=None),
@@ -62,7 +62,7 @@ scatterplot = alt.Chart(happy).mark_circle(opacity=0.9).encode(
   x=alt.X("GDP per capita:Q",axis=alt.Axis(title='GDP per capita, scaled')),
   y="Score:Q",
   color=continent_color,
-  tooltip=['Country', 'Score', 'Overall rank']
+  tooltip=['Country', 'Score', 'Overall rank'] #hover properties
 ).properties(
   title='Does money (in GDP per capita) buy happiness?'
 ).add_selection(selection).interactive()
@@ -70,7 +70,7 @@ scatterplot = alt.Chart(happy).mark_circle(opacity=0.9).encode(
 legend = alt.Chart(happy).mark_rect().encode(
     y=alt.Y("Continent:N", axis=alt.Axis(orient="right")),
     color=continent_color
-).add_selection(selection) # We now add it to the legend instead, since that is what the viewer interacts with
+).add_selection(selection)
 
 scatterplot | legend
 ```
